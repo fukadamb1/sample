@@ -1,0 +1,6 @@
+効果音ラボ　https://soundeffect-lab.info/ 
+きらきら輝く5.mp3  	==> omikuji_sound1.mp3　大吉
+鈴を鳴らす.mp3  	==> omikuji_sound2.mp3　中吉
+和太鼓でドドン.mp3  ==> omikuji_sound3.mp3　小吉
+小鼓.mp3			==> omikuji_sound4.mp3　末吉
+チーン1.mp3			==> omikuji_sound5.mp3　大凶

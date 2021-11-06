@@ -1,0 +1,8 @@
+[0923/111944.955:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1001/225417.773:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1023/220109.721:ERROR:directory_reader_win.cc(43)] FindFirstFile: 指定されたパスが見つかりません。 (0x3)
+[1023/234838.415:ERROR:directory_reader_win.cc(43)] FindFirstFile: 指定されたパスが見つかりません。 (0x3)
+[1024/145154.771:ERROR:directory_reader_win.cc(43)] FindFirstFile: 指定されたパスが見つかりません。 (0x3)
+[1024/151745.103:ERROR:directory_reader_win.cc(43)] FindFirstFile: 指定されたパスが見つかりません。 (0x3)
+[1024/163633.651:ERROR:directory_reader_win.cc(43)] FindFirstFile: 指定されたパスが見つかりません。 (0x3)
+[1122/164211.095:ERROR:crash_report_database_win.cc(457)] unexpected header
