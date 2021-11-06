@@ -39,13 +39,14 @@ function saveLocalStorage() {
           return;
       }else{
         let w_msg = "LocalStorageに\n「" + key + " " + value + "」\nを保存（save）しますか？";
-        //確認（かくにん）ダイアログで「OK」を押されたとき、保存（ほぞん）する
         Swal.fire({
           title: "Memo app" //タイトルをここに設定
           , html : w_msg //メッセージ内容をここに設定
+          , type : "question" //ダイアログにアイコンを表示したい場合に設定する引数 warning,error,success,info,question
           , showCancelButton : true // キャンセルボタンの表示
         }).then(function(result) {
-            if (result.value) {
+            //確認（かくにん）ダイアログで「OK」を押されたとき、保存（ほぞん）する
+            if (result.value === true) {
               localStorage.setItem(key, value);
               viewStorage(); //localStorageからのデータの取得（しゅとく）とテーブルへ表示（ひょうじ）
               let w_msg = "LocalStorageに" + key + " " + value + "を保存（ほぞん）しました。";
@@ -78,12 +79,13 @@ function delLocalStorage() {
 
       if(w_cnt >= 1){ 
         let w_msg = "LocalStorageから選択されている" + w_cnt + "件を削除（delete）しますか？";   // 
-        //確認（かくにん）ダイアログで「OK」を押されたとき、削除（さくじょ）する
         Swal.fire({
           title: "Memo app" //タイトルをここに設定
           , html : w_msg //メッセージ内容をここに設定
+          , type : "question" //ダイアログにアイコンを表示したい場合に設定する引数 warning,error,success,info,question
           , showCancelButton : true // キャンセルボタンの表示
         }).then(function(result) {
+            //確認（かくにん）ダイアログで「OK」を押されたとき、削除（さくじょ）する
             if (result.value) {
               for(let i = 0; i < chkbox1.length; i++){ 
                 if(chkbox1[i].checked) {
@@ -117,6 +119,7 @@ function allClearLocalStorage() {
       Swal.fire({
         title: "Memo app" //タイトルをここに設定
         , html : w_msg //メッセージ内容をここに設定
+        , type : "question" //ダイアログにアイコンを表示したい場合に設定する引数 warning,error,success,info,question
         , showCancelButton : true // キャンセルボタンの表示
       }).then(function(result) {
           if (result.value) {
